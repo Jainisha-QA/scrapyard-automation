@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 @pytest.fixture(scope='class', autouse=True)
 def init_driver(request):
     options = Options()
-    options.add.arhuments("--headless")
+    options.add_argument("--headless")
     web_driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
     # web_driver = webdriver.Chrome(executable_path="https://chromedriver.storage.googleapis.com/index.html?path=114.0.5735.90/")
     request.cls.driver = web_driver
