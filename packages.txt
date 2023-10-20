@@ -1,0 +1,15 @@
+packages list which need to install
+
+install selenium package
+pip install selenium
+
+install webdriver manager
+pip install webdriver-manager
+
+install pytest framework
+pip install pytest
+
+install report plugins
+pip install pytest-html
+
+require __init__ file in Tests to generate reports
