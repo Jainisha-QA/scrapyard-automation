@@ -39,7 +39,7 @@ jobs:
     - run: |
         cd Tests
         mkdir -p reports
-        pytest test_BuyCompanyPage.py --html=reports/reports.html
+        pytest --html=reports/reports.html
         chmod 777  /home/runner/work/scrapyard-automation/scrapyard-automation/Tests/reports/
 
     - name: Set output
